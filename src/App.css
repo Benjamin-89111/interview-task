@@ -1,0 +1,633 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.row {
+  --bs-gutter-x: none !important;
+  --bs-gutter-y: none !important;
+
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* Set the container height */
+}
+
+.carousel-image {
+  width: 100%;
+  /* Set the image width to 100% of the container */
+  height: 250px;
+  /* Maintain aspect ratio */
+  max-height: 100%;
+  /* Limit the image height to 100% of the container */
+  object-fit: cover;
+  /* Maintain aspect ratio while fitting the image within the container */
+}
+
+@media only screen and (max-width: 767px) {
+  .slick-prev {
+    display: none !important;
+  }
+
+  .slick-next {
+    display: none !important;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* Carousel.css */
+/* Example styles, customize as per your requirements */
+
+.carousel {
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.carousel .slide {
+  background: #fff;
+}
+
+.carousel .legend {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.card-bg,
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+  background: linear-gradient(0deg, rgb(26, 26, 26), rgb(75, 75, 75));
+}
+
+.search {
+  width: 50%;
+  /* display: flex !important;
+  justify-content: end !important; */
+}
+
+.search-1 {
+  /* width: 50%; */
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.cta-1 {
+  background: linear-gradient(rgba(188, 195, 199, 0.6), rgba(43, 45, 46, 0.8)), url("./Images/Leather.jpg") fixed center center;
+  background-size: cover;
+  object-fit: cover;
+  height: auto;
+}
+
+.cta-2 {
+  background: linear-gradient(rgba(188, 195, 199, 0.6), rgba(43, 45, 46, 0.8)), url("./Images/pexels-vlada-karpovich-6634654.jpg") fixed center center;
+  background-size: cover;
+  object-fit: cover;
+  /* height: auto; */
+}
+
+.cta-3 {
+  background: linear-gradient(rgba(188, 195, 199, 0.6), rgba(43, 45, 46, 0.8)), url("./Images/pexels-sharath-g-10899309.jpg") fixed center center;
+  background-size: cover;
+  object-fit: cover;
+  height: auto;
+}
+
+.cta-4 {
+  background: linear-gradient(rgba(188, 195, 199, 0.6), rgba(43, 45, 46, 0.8));
+  background-size: cover;
+  object-fit: cover;
+  height: auto;
+}
+
+/* FlashDeals.css */
+
+.flash-deals-container {
+  /* margin: 20px; */
+}
+
+
+
+.product-card {
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .MuiCardMedia-root {
+    object-fit: cover;
+  }
+}
+
+/* TopCategories.css */
+
+.category-card {
+  opacity: 0;
+  /* Initially hide the category cards */
+  animation: fadeIn 0.5s ease-in-out forwards;
+  /* Apply the fadeIn animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    /* Start with opacity 0 (hidden) */
+  }
+
+  to {
+    opacity: 1;
+    /* End with opacity 1 (fully visible) */
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase !important;
+}
+
+label[data-shrink=false]+.MuiInputBase-formControl .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  width: 100px;
+}
+
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  padding-right: 32px;
+  width: 100px;
+}
+
+.css-hav9kw-MuiTypography-root {
+  margin-top: 10px !important;
+}
+
+/* ProductDetailPage.css */
+
+/* Style for the main product detail card */
+.product-detail-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for the sub-images grid */
+/* .sub-image {
+  width: 100px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  transition: border 0.2s ease-in-out;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Style for the selected sub-image */
+.sub-image.selected {
+  border: 2px solid #fff;
+}
+
+.main-image {
+  width: 400px !important;
+  height: 400px !important;
+  object-fit: cover;
+}
+
+/*  */
+/* ProductDetailPage.css */
+
+.product-detail-card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.product-description {
+  margin-top: 20px;
+}
+
+.sub-images-container {
+  display: flex;
+  justify-content: start;
+  margin-top: 20px;
+}
+
+.sub-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  transition: border 0.2s ease-in-out;
+}
+
+.sub-image.selected {
+  border: 2px solid #ccc;
+}
+
+/* Additional styles can be added as needed */
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-button {
+  width: 30px;
+  height: 30px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.quantity-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.quantity {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+/*  */
+
+/* src/components/LoginPage.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.login-form {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.login-form:hover {
+  transform: scale(1.02);
+}
+
+.login-form h4 {
+  margin-bottom: 20px;
+}
+
+.login-form button {
+  margin-top: 20px;
+}
+
+.login-form a {
+  margin-top: 10px;
+  display: block;
+}
+
+/* Customize these styles as needed for your design */
+
+/* src/components/SignUpPage.css */
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.signup-form {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.signup-form:hover {
+  transform: scale(1.02);
+}
+
+.signup-form h4 {
+  margin-bottom: 20px;
+}
+
+.signup-form button {
+  margin-top: 20px;
+}
+
+.signup-form a {
+  margin-top: 10px;
+  display: block;
+}
+
+
+
+/* Text Field Styles */
+.login-input {
+  width: 100%;
+}
+
+/* Button Styles */
+.login-button {
+  width: 100%;
+}
+
+/* Link Styles */
+.sign-up-link {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.login-bg {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/*  */
+/* SignUp.css */
+
+/* Container Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/* Form Styles */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Input Styles */
+.input {
+  width: 100%;
+}
+
+/* Error Text Styles */
+.error-text {
+  color: #f44336;
+  /* Red color for error text */
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Button Styles */
+.button {
+  width: 100%;
+  margin-top: 16px;
+}
+
+/* Styles for the cart container */
+.cart-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Styles for the cart icon */
+.cart-icon {
+  color: #fff;
+  font-size: 24px;
+  /* Adjust the font size as needed */
+}
+
+/* Styles for the cart badge */
+.cart-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1px 7px;
+  font-size: 12px;
+}
+
+/* {
+  background: linear-gradient(90deg, rgb(220, 203, 165), rgb(149, 120, 81)) !important;
+  -webkit-background-clip: text !important;
+  color: white !important;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.gold-txt {
+  background: linear-gradient(90deg, rgb(220, 203, 165), rgb(149, 120, 81)) !important;
+  -webkit-background-clip: text !important;
+  color: transparent !important;
+}
+
+.black-txt {
+  background: linear-gradient(0deg, rgb(26, 26, 26), rgb(75, 75, 75)) !important;
+  -webkit-background-clip: text !important;
+  color: transparent !important;
+}
+
+.card-bg-gold {
+  background: linear-gradient(90deg, rgb(220, 203, 165), rgb(149, 120, 81)) !important;
+}
+
+
+
+.brd-right {
+  border-right: 1px solid #fff;
+}
+
+.MuiInputBase-input,
+.MuiOutlinedInput-input,
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  background: #fff !important;
+  border-radius: 10px;
+
+}
+
+.PrivateSwitchBase-input .css-1m9pwf3 {
+  border: 1px solid #fff !important;
+}
+
+
+.PrivateSwitchBase-inpu:focus {
+  border-radius: 26;
+}
+
+/* th {
+  background: linear-gradient(0deg, rgb(26, 26, 26), rgb(75, 75, 75)) !important;
+} */
+
+table {
+  border: none !important;
+  width: 40%;
+}
+
+audio {
+  width: 250px !important;
+}
+
+/* .css-konndc-MuiListItemText-root {
+  -webkit-flex: none !important;
+  -ms-flex: 1 1 auto;
+  flex: none !important;
+  min-width: 0;
+  margin-top: 6px;
+  margin-bottom: 6px;
+} */
+@media only screen and (min-width: 500px) {
+  .css-10hburv-MuiTypography-root {
+    width: 300px !important;
+  }
+
+  .cart-item {
+    border-bottom: 1px solid rgb(149, 120, 81) !important;
+  }
+}
+
+/* @media only screen and (width: 767px) {
+  .cart-table-head {
+    display: none;
+  }
+
+  .prd-name-cart {
+    text-align: left !important;
+  }
+
+} */
+
+@media only screen and (max-width: 767px) {
+  .cart-table-head {
+    display: none !important;
+  }
+
+  .prd-name-cart {
+    text-align: left !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .prd-name-cart {
+    text-align: center !important;
+  }
+}
+
+
+.css-1kkal6p-MuiAutocomplete-root .MuiOutlinedInput-root {
+  padding: 0px !important;
+}
+
+/*  */
+.pagi button {
+  color: #fff !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #fff !important;
+  font-size: 20px !important;
+}
+
+.slick-next {
+  right: 20px !important;
+  top: -4% !important;
+  z-index: 9999 !important;
+}
+
+.slick-prev {
+  left: 0 !important;
+  top: -4% !important;
+  z-index: 9999 !important;
+  margin-left: 20px !important;
+}
+
+.icon-link {
+  display: inline-block !important;
+  text-decoration: none !important;
+  color: #333 !important;
+  transition: transform 0.3s ease-in-out !important;
+}
+
+.cta-2 {
+  background: linear-gradient(rgba(43, 45, 46, 0.8), rgba(185, 207, 218, 0.8)), url("./Images/Leather.jpg") fixed center center;
+  background-size: cover;
+  object-fit: cover;
+  height: 300px !important;
+}
+
+.css-1v2lvtn-MuiPaginationItem-root {
+  color: #fff !important;
+}
